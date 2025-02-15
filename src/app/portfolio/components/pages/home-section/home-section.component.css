@@ -1,13 +1,48 @@
 .container {
     width: 100vh;
-    height: 98.3vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-/* .memoji{
-} */
-
-.text{
-    font-size: 5rem;
+.memoji {
+    height: 15rem;
+    img {
+        width: 18rem;
+    }
 }
+
+.text {
+    font-size: 1.5rem;
+
+    p {
+        display: flex;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .container {
+        flex-direction: row;        
+    }
+
+    .memoji {
+        height: 25rem;
+        img {
+            width: 26rem;
+        }
+    }
+
+    .text {
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 1024px) { 
+    .text {
+        font-size: 5rem;
+    }
+  }
