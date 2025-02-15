@@ -1,0 +1,13 @@
+.container {
+    width: 100vh;
+    height: 98.3vh;
+    display: flex;
+    align-items: center;
+}
+
+/* .memoji{
+} */
+
+.text{
+    font-size: 5rem;
+}
